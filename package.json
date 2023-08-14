@@ -1,0 +1,16 @@
+{
+  "name": "Re:Ei",
+  "version": "v0",
+  "description": "Ei bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mewtwo2387",
+  "license": "ISC",
+  "dependencies": {
+    "discord-reply": "^0.1.2",
+    "discord.js": "^12.5.1",
+    "replicate": "^0.14.1"
+  }
+}
