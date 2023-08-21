@@ -1,3 +1,5 @@
+//oh hello. good luck reading this shit.
+
 const Discord = require('discord.js');
 require('discord-reply');
 const client = new Discord.Client();
@@ -210,6 +212,9 @@ client.on('message', message =>{
         case "check profile":
             client.commands.get('profile').execute(message,data,client);
             return;
+        case 'minecraft':
+            client.commands.get('minecraft').execute(message)
+            return;
         case "play tgp hangman":
             if(hangman){
                 message.channel.send("Another game in process!")
@@ -278,10 +283,15 @@ client.on('guildMemberRemove', member => {
     }
 });
 
+
+//hehe you found the tokens... but does it work?
+
 client.login('MTA3NTk2MTg1NDYyNDU0Mjc5MQ.GxKwt9.1OslZvBNtOSI1vK0z_d5StLKvvG-9V_xj-xJtU') //re:ei
 //client.login('MTEzNjQ4Mjk5NDUzODk1ODg3OA.GbYO6w.DBNCgKTSu9CI9G0AEOlbHZEJHSrCcUiUfc5XJo'); //ei.test
 //client.login('MTA5MDUzMDY4NzU3ODI3NTg1MA.G2BjXZ.Qlmr99YHjcIsLBMoq6pCpiBwjvyWx2k8RSyuNw') //karezi
 
+
+//yes it's just one big json.
 
 function saveData(){
     fs.writeFile("data.json", JSON.stringify(data), function(err) {
